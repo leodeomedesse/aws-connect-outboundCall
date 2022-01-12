@@ -56,45 +56,7 @@ exports.handler = (event) => {
             if (err) { console.log('Error', err.stack) }
             else { console.log('Success') }
         });
-        
-        
-        
-
-        
-        // const listOfAppeals = response.ListOfAppeals[1];
-        
-        // console.log('listOfAppeals -> ', listOfAppeals);
-        
-        // const DestinationPhoneNumber2 = "+1" + listOfAppeals.MobileNumber.replace(/-/g, '');
-        // const HearingDateTimeAux2 = listOfAppeals.HearingDateTime.replace(' ',', at ');
-        
-        // date = new Date(listOfAppeals.HearingDateTime);
-        // HearingDateTime15 = new Date(date.setMinutes(date.getMinutes() - 15));
-        // HearingDateTime15 = HearingDateTime15.toString().substring(16, 21);
-        
-        // params = {
-        //     ContactFlowId: "55427e2c-c648-4f73-b963-a71311ccb03b",
-        //     DestinationPhoneNumber: DestinationPhoneNumber2,
-        //     InstanceId: "41aca699-c8ea-4751-aa01-683248c7995f",
-        //     SourcePhoneNumber: "+13416003497",
-        //     Attributes: {
-        //         Language: listOfAppeals.Language,
-        //         HearingDateTime: HearingDateTimeAux2,
-        //         HearingDateTime15
-        //     },
-        // };
-
-        // console.log('before -> ', params);
-        // connect.startOutboundVoiceContact(params, function (err, data) {
-        //     console.log('initial');
-        //     if (err) { console.log('Error', err.stack) }
-        //     else { console.log('Success') }
-        // });
-        
-        
-        
     }
-   
 };
 
 
